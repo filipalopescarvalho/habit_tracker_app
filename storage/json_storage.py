@@ -1,19 +1,55 @@
 import json
+
 from models.habit import Habit
+from models.event_log import EventLog
 
 
 class JSONStorage:
-    def __init__(self, filename):
-        self.filename = filename
+    def __init__(
+        self,
+        habits_file="habits.json",
+        events_file="events.json"
+    ):
+        self.habits_file = habits_file
+        self.events_file = events_file
+
+    # -------------------------
+    # HABITS
+    # -------------------------
 
     def save_habits(self, habits):
-        with open(self.filename, "w") as file:
-            json.dump([habit.to_dict() for habit in habits], file, indent=4)
+        with open(self.habits_file, "w") as file:
+            json.dump(
+                [habit.to_dict() for habit in habits],
+                file,
+                indent=4
+            )
 
     def load_habits(self):
         try:
-            with open(self.filename, "r") as file:
+            with open(self.habits_file, "r") as file:
                 data = json.load(file)
                 return [Habit.from_dict(item) for item in data]
+
+        except FileNotFoundError:
+            return []
+
+   
+    # habits -------------------------
+
+    def save_events(self, events):
+        with open(self.events_file, "w") as file:
+            json.dump(
+                [event.to_dict() for event in events],
+                file,
+                indent=4
+            )
+
+    def load_events(self):
+        try:
+            with open(self.events_file, "r") as file:
+                data = json.load(file)
+                return [EventLog.from_dict(item) for item in data]
+
         except FileNotFoundError:
             return []
