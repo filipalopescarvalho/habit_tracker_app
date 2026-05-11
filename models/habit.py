@@ -44,13 +44,13 @@ class Habit:
     def from_dict(cls, data):
         """Create Habit object from dictionary."""
         return cls(
-            habit_id=data["habit_id"],
+            habit_id=data.get("habit_id"),
             name=data["name"],
             periodicity=data["periodicity"],
             created_at=datetime.fromisoformat(data["created_at"]),
             completions=[
                 datetime.fromisoformat(c)
-                for c in data["completions"]
+                for c in data.get("completions", [])
             ],
             active=data.get("active", True)
         )
@@ -60,7 +60,6 @@ class Habit:
             f"Habit("
             f"id={self.habit_id}, "
             f"name={self.name}, "
-            f"periodicity={self.periodicity}, "
-            f"completions={len(self.completions)}"
+            f"periodicity={self.periodicity}"
             f")"
         )

@@ -50,6 +50,12 @@ class HabitManager:
 
         return False
 
+    def get_habit_completion_count(self, habit_id):
+        return len([
+            event for event in self.events
+            if event.habit_id == habit_id and event.status == "completed"
+        ])
+
     def get_events_for_habit(self, habit_id):
         return [
             event for event in self.events

@@ -9,6 +9,19 @@ from analytics.analytics import (
 )
 
 
+def print_habit_with_completion_count(manager, habit):
+    completion_count = manager.get_habit_completion_count(habit.habit_id)
+
+    print(
+        f"Habit("
+        f"id={habit.habit_id}, "
+        f"name={habit.name}, "
+        f"periodicity={habit.periodicity}, "
+        f"completions={completion_count}"
+        f")"
+    )
+
+
 def run_cli():
     storage = JSONStorage(
         habits_file="habits.json",
@@ -56,7 +69,7 @@ def run_cli():
                 print("No habits found.")
             else:
                 for habit in habits:
-                    print(habit)
+                    print_habit_with_completion_count(manager, habit)
 
         elif choice == "4":
             daily_habits = get_habits_by_periodicity(
@@ -68,7 +81,7 @@ def run_cli():
                 print("No daily habits found.")
             else:
                 for habit in daily_habits:
-                    print(habit)
+                    print_habit_with_completion_count(manager, habit)
 
         elif choice == "5":
             weekly_habits = get_habits_by_periodicity(
@@ -80,7 +93,7 @@ def run_cli():
                 print("No weekly habits found.")
             else:
                 for habit in weekly_habits:
-                    print(habit)
+                    print_habit_with_completion_count(manager, habit)
 
         elif choice == "6":
             longest_streak = get_longest_streak_all(
