@@ -3,6 +3,7 @@ import json
 from models.habit import Habit
 from models.event_log import EventLog
 
+### JSONStorage class to handle saving and loading habits and events to/from JSON files.
 
 class JSONStorage:
     def __init__(
@@ -13,9 +14,7 @@ class JSONStorage:
         self.habits_file = habits_file
         self.events_file = events_file
 
-    # -------------------------
-    # HABITS
-    # -------------------------
+
 
     def save_habits(self, habits):
         with open(self.habits_file, "w") as file:
@@ -35,8 +34,6 @@ class JSONStorage:
             return []
 
    
-    # habits -------------------------
-
     def save_events(self, events):
         with open(self.events_file, "w") as file:
             json.dump(

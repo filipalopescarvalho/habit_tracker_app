@@ -3,6 +3,7 @@ import uuid
 
 
 class Habit:
+    ### Habit class to represent a habit with validation for periodicity and methods for JSON serialization.
     VALID_PERIODICITIES = ["daily", "weekly"]
 
     def __init__(

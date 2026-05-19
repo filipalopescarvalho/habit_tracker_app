@@ -3,6 +3,7 @@ import uuid
 
 
 class EventLog:
+    ### EventLog class to represent a habit completion event, with validation for status and methods for JSON serialization.
     VALID_STATUSES = ["completed", "missed"]
 
     def __init__(

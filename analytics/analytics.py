@@ -1,11 +1,14 @@
 from datetime import timedelta
 
+### Analytics functions to calculate streaks and success rates for habits based on their completion events.
 
 def get_all_habits(habits):
+    ### Return a list of all active habits.
     return habits
 
 
 def get_habits_by_periodicity(habits, periodicity):
+    ### Return a list of habits filtered by their periodicity (daily or weekly).
     return [
         habit for habit in habits
         if habit.periodicity == periodicity
@@ -13,6 +16,7 @@ def get_habits_by_periodicity(habits, periodicity):
 
 
 def get_events_for_habit(events, habit_id):
+    
     return [
         event for event in events
         if event.habit_id == habit_id and event.status == "completed"
@@ -54,6 +58,7 @@ def calculate_streak(events, habit):
 
 
 def get_longest_streak_all(habits, events):
+    ### Calculate the longest streak across all habits.
     if not habits:
         return 0
 
@@ -68,6 +73,7 @@ def get_longest_streak_for_habit(habit, events):
 
 
 def calculate_success_rate(events, habit):
+    ### Calculate the success rate for a habit as the ratio of completed events to total events.
     habit_events = get_events_for_habit(events, habit.habit_id)
 
     if not habit_events:
