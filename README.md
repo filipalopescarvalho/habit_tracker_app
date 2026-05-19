@@ -1,31 +1,83 @@
-#Habit tracker app
+# Habit Tracker App
 
-A Python-based habit tracking application developed using object-oriented and functional progrmaming principles. The application allows users to create, manage, track, and analyse habits using a command-line interface (CLI).
+A Python-based habit tracking application developed using object-oriented and functional programming principles. The application allows users to create, manage, track, and analyse habits using a command-line interface (CLI).
 
-## Features
+---
 
-* Create and manage habits
-* Track daily and weekly habits
-* Record habit completions with timestamps
-* Analyse habits using streak calculations and sucess rates
-* Command Line Interface (CLI)
-* Data persistence using JSON
-* Automated testing using `pytest``
-* Predefined habits with 4-week dummy test data
+# Features
 
-## Technology used 
+- Create and manage habits
+- Track daily and weekly habits
+- Record habit completions with timestamps
+- Analyse habits using streak calculations and success rates
+- Command Line Interface (CLI)
+- Data persistence using JSON
+- Automated testing using `pytest`
+- Predefined habits with 4-week dummy test data
 
-* Python 3
-* Object-oriented Programming (OOP)
-* Functional Programming (analytics)
-* JSON for storage
+---
 
-## How to Run the APP
+# Technologies Used
 
-``` bash
+- Python 3
+- Object-Oriented Programming (OOP)
+- Functional Programming (analytics)
+- JSON for storage
+- Pytest for testing
+
+---
+
+# Project Structure
+
+```text
+models/
+services/
+storage/
+analytics/
+tests/
+```
+
+---
+
+# How to Run the Application
+
+```bash
 python main.py
+```
 
-## Running all tests  with:
+---
 
-``` bash
-python -m pytest 
+# Running Tests
+
+```bash
+python -m pytest
+```
+
+---
+
+# Screenshots
+
+## CLI Example
+
+(Add your CLI screenshot here)
+
+## Pytest Results
+
+(Add your pytest screenshot here)
+
+---
+
+# Future Improvements
+
+- Graphical user interface (GUI)
+- Web-based interface
+- Relational database integration
+- Advanced analytics and reporting
+
+## CLI Example 
+
+![CLI Screenshot](screenshots/CLI.png)
+
+## Pytest Results
+
+![Pytest Screenshot](screenshots/pytests.png)
