@@ -76,7 +76,7 @@ python -m pytest
 
 ## CLI Example 
 
-![CLI Screenshot](screenshots/CLI.png)
+![CLI Screenshot](screenshots/CLI .png)
 
 ## Pytest Results
 
