@@ -70,5 +70,31 @@
         "created_at": "2026-05-11T15:38:05.611101",
         "completions": [],
         "active": false
+    },
+    {
+        "habit_id": "c2884318-1e65-4f8e-be46-2c5825e9eeea",
+        "name": "Groceries",
+        "periodicity": "weekly",
+        "created_at": "2026-06-01T15:58:17.656399",
+        "completions": [
+            "2026-06-01T16:01:12.716041"
+        ],
+        "active": true
+    },
+    {
+        "habit_id": "02000835-b791-477e-9afe-0bca3d37210f",
+        "name": "3",
+        "periodicity": "weekly",
+        "created_at": "2026-06-01T16:00:18.722126",
+        "completions": [],
+        "active": false
+    },
+    {
+        "habit_id": "05a0c5d1-2dd8-4181-8d66-5bd584072a47",
+        "name": "Groceries",
+        "periodicity": "weekly",
+        "created_at": "2026-06-01T16:00:58.351183",
+        "completions": [],
+        "active": true
     }
 ]

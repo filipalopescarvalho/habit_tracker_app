@@ -520,5 +520,11 @@
         "habit_id": "624c52a8-ab25-4914-a90a-a5b462e729a0",
         "status": "completed",
         "completion_date": "2026-05-11T15:44:13.637089"
+    },
+    {
+        "event_id": "f98f105c-69f2-4af0-a897-0d3e140b05c3",
+        "habit_id": "c2884318-1e65-4f8e-be46-2c5825e9eeea",
+        "status": "completed",
+        "completion_date": "2026-06-01T16:01:12.716226"
     }
 ]
