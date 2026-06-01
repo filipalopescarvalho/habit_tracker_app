@@ -55,24 +55,14 @@ python -m pytest
 
 ---
 
-# Screenshots
-
-## CLI Example
-
-(Add your CLI screenshot here)
-
-## Pytest Results
-
-(Add your pytest screenshot here)
-
----
-
 # Future Improvements
 
 - Graphical user interface (GUI)
 - Web-based interface
 - Relational database integration
 - Advanced analytics and reporting
+
+# Screenshots
 
 ## CLI Example 
 
