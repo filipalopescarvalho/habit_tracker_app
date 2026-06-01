@@ -39,8 +39,7 @@ tests/
 
 ---
 # Installation
-````
-bash
+````bash
 pip install -r requirements.txt
 ```
 ---
@@ -62,14 +61,13 @@ python -m pytest
 
 # Screenshots
 
-## CLI Example 
+## CLI Example
 
 ![CLI Screenshot](screenshots/CLI.png)
 
 ## Pytest Results
 
 ![Pytest Screenshot](screenshots/pytests.png)
-
 ---
 
 # Future Improvements
