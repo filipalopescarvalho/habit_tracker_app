@@ -67,7 +67,7 @@ python -m pytest
 
 ## Pytest Results
 
-![Pytest Screenshot](screenshots/pytests.png)
+![Pytest Screenshot](screenshots/pytest.png)
 ---
 
 # Future Improvements
