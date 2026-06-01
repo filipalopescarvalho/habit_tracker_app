@@ -52,15 +52,7 @@ python main.py
 ```bash
 python -m pytest
 ```
-
 ---
-
-# Future Improvements
-
-- Graphical user interface (GUI)
-- Web-based interface
-- Relational database integration
-- Advanced analytics and reporting
 
 # Screenshots
 
@@ -71,3 +63,13 @@ python -m pytest
 ## Pytest Results
 
 ![Pytest Screenshot](screenshots/pytests.png)
+
+---
+
+# Future Improvements
+
+- Graphical user interface (GUI)
+- Web-based interface
+- Relational database integration
+- Advanced analytics and reporting
+
